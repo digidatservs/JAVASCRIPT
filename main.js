@@ -6,6 +6,7 @@ const init = () => {
 if(submitButton) {
     submitButton.addEventListener('click', (event) => {
         event.preventDefault();
+            submitButton.textContent = "...Loading";
 
         fetch('https://reqres.in/api/login', {
             method: 'POST',
