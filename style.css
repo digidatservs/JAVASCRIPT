@@ -1,14 +1,16 @@
 :root {
-    --back-color: linear-gradient(120deg, #f0edca, #dfb912);
-    --btn-color: linear-gradient(120deg, #beaa36, #554109);
-    --cont-color: #ffffff;
-    --title-color: #947a05;
-    --btn-text: #f1db7a;
-    --btn-disabled: #aca3a3;
+    --back-color: #C6FFDD;  /* fallback for old browsers */
+    --back-color: -webkit-linear-gradient(to right, #F7797D, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+    --back-color: linear-gradient(to right, #F7797D, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    --btn-color: linear-gradient(to right, #F7797D, #FBD786, #C6FFDD);
+    --cont-color: #FFFFFF;
+    --title-color: #8B3E10;
+    --btn-text: #8B3E10;
+    --btn-disabled: #ACA3A3;
     --inp-error: rgb(143, 66, 66);
-    --reset-color: #926d07ea;
+    --reset-color: #722406;
     --btn-success: rgb(76, 158, 22);
-    --reset-hover: linear-gradient(120deg, #f3efd7, #b1a687);
+    --reset-hover: linear-gradient(to right, #F3B0B2, #F1E78E, #B7F0CE);
 
 }
 
@@ -128,7 +130,8 @@ s__login.error::after {
 .a__reset:hover {
     outline: none;
     border-radius: 4px;
-    padding: 5px;
+    padding: 10px;
     font-weight: bold;
     background: var(--reset-hover);
 }
+
